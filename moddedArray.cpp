@@ -2,15 +2,6 @@
 
 using namespace std;
 
-int moddedArray::getSize(){
-    //Counts each element in array and adds them up
-    int num = 0;
-    for(int i = 0; i < size; i++){
-       num++;
-    }
-    return num;
-}
-
 void moddedArray::append(int num){
     try {
         int *dupe = new int[size + 1]; //Creates a new array 1 bigger than current array

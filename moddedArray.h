@@ -10,10 +10,10 @@ struct twoPiece{
 
 class moddedArray{
     private:
-        int size = 100;
-        int *arr = new int[size];
+        int size = 100; // Default array size set to 100
+        int *arr = new int[size]; // Allocating space for an array of 100 integers, all items initialize to 0
     public:
-        int getSize();
+        int getSize() {return size;}
         int check(int num);
         twoPiece modify(int index, int newVal);
         void popMod(int index, char choice);
